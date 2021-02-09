@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="container__header">
+    <h1>Lista de personajes</h1>
+    <button (click)="onClickPrev()">Anterior</button>
+    <button (click)="onClickNext()">Siguiente</button>
+    <p>Número de página: {{ page }} de {{ nroPages }}</p>
+  </div>
+
+  <div class="container__cards">
+    <div
+      class="container__cards-card"
+      *ngFor="let c of characters"
+      [ngClass]="{ dead: c.status === 'Dead', alive: c.status === 'Alive' }"
+    >
+      <h4>{{ c.name }}</h4>
+      <img [src]="c.image" alt="character image" />
+      <p>{{ c.species }}</p>
+    </div>
+  </div>
+</div>
