@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "http-client-rickandmortyapi:build"
+            "buildTarget": "http-client-rickandmortyapi:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "http-client-rickandmortyapi:build:production"
+              "buildTarget": "http-client-rickandmortyapi:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "http-client-rickandmortyapi:build"
+            "buildTarget": "http-client-rickandmortyapi:build"
           }
         },
         "test": {
