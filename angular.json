@@ -119,6 +119,5 @@
         }
       }
     }
-  },
-  "defaultProject": "http-client-rickandmortyapi"
+  }
 }
